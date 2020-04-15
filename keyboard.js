@@ -1,4 +1,4 @@
-cont keyboard ={
+const keyboard ={
     elements:{
         main: null,
         keysContainer: null,
@@ -35,7 +35,7 @@ _createKeys() {
 },
 
 _triggerEvent(handleName) {
-    console.log(""Event Triggered! Event Name: " + handlerName);
+    console.log("Event Triggered! Event Name: " + handlerName);
 },
 
 _toggleCapsLock () {
