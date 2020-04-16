@@ -27,7 +27,7 @@ init() {
 
     //Add to DOM
     this.elements.main.appendChild(this.elements.keysContainer);
-    document.body.appendChild(this.element.main);
+    document.body.appendChild(this.elements.main);
 
 },
 
@@ -46,7 +46,7 @@ _createKeys() {
         return `<i class="material-icons">${icon_name}</i>`;
     };
 
-    keyLayout.forEach(key >= {
+    keyLayout.forEach(key => {
         const keyElement = document.createElement("button");
         const insertLineBreak = ["backspace", "p", "enter", "?"].indexOf(key) !== -1; 
 
