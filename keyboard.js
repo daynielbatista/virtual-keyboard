@@ -1,4 +1,4 @@
-const keyboard ={
+const keyboard = {
     elements:{
         main: null,
         keysContainer: null,
@@ -11,7 +11,7 @@ eventHandlers: {
 },
 
 properties: {
-    value:"",
+    value: "",
     capsLock: false
 },
 
@@ -21,7 +21,7 @@ init() {
     this.elements.keysContainer = document.createElement("div");
     
     //Setup main elements
-    this.elements.main.classList.add("keyboard", "1keyboard--hidden");
+    this.elements.main.classList.add("keyboard");
     this.elements.keysContainer.classList.add("keyboard__keys");
     this.elements.keysContainer.appendChild(this._createKeys());
 
@@ -142,11 +142,11 @@ _toggleCapsLock () {
 },
 
 open(initialValue, oninput, onclose) {
-
+    
 },
 
 close() {
-
+    
 },
 
 };
